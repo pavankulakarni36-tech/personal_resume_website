@@ -1,0 +1,512 @@
+
+/* =====================================
+   COMMON WEBSITE DESIGN
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eeeaf7;
+    color: #29243d;
+    line-height: 1.6;
+}
+
+/* COMMON HEADER */
+
+.site-header {
+    background: linear-gradient(135deg, #19162f, #514078);
+    padding: 25px 15px;
+    text-align: center;
+    color: white;
+}
+
+.site-header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.site-nav a {
+    color: #e2ddec;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.site-nav a:hover {
+    color: white;
+}
+
+/* COMMON FOOTER */
+
+.site-footer {
+    background: #19162f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* =====================================
+   HOME PAGE
+===================================== */
+
+.home-container {
+    width: 92%;
+    max-width: 1050px;
+    margin: 35px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(25,22,47,0.12);
+}
+
+.home-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #19162f, #514078);
+    border-radius: 18px;
+    color: white;
+}
+
+.home-profile img {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #c8b5ff;
+}
+
+.home-profile h2 {
+    font-size: 29px;
+    margin-bottom: 5px;
+}
+
+.home-profile h3 {
+    color: #c8b5ff;
+    margin-bottom: 12px;
+}
+
+.home-profile p {
+    color: #eee8fa;
+}
+
+.home-intro {
+    padding: 25px 5px;
+    text-align: center;
+}
+
+.home-intro h2 {
+    color: #514078;
+    margin-bottom: 12px;
+}
+
+.home-intro p {
+    color: #625b70;
+    line-height: 1.8;
+}
+
+.home-details {
+    background: #f7f4fd;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.home-details h2 {
+    text-align: center;
+    color: #514078;
+    margin-bottom: 22px;
+}
+
+.home-detail-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.home-detail-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 4px solid #7655b5;
+}
+
+.home-detail-card h3 {
+    color: #7655b5;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.home-detail-card p {
+    color: #29243d;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.home-email {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 4px solid #7655b5;
+    overflow-wrap: anywhere;
+}
+
+.home-email h3 {
+    color: #7655b5;
+    margin-bottom: 5px;
+}
+
+/* =====================================
+   RESUME PAGE
+===================================== */
+
+.resume-container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(25,22,47,0.12);
+}
+
+.resume-profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(135deg, #19162f, #514078);
+    border-radius: 15px;
+}
+
+.resume-profile img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #c8b5ff;
+}
+
+.resume-profile h2 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.resume-profile p {
+    color: #e2ddec;
+}
+
+.resume-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.resume-main,
+.resume-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.resume-section {
+    background: #f7f4fd;
+    padding: 22px;
+    border-radius: 13px;
+    border-left: 5px solid #7655b5;
+}
+
+.resume-section h2 {
+    color: #514078;
+    font-size: 19px;
+    margin-bottom: 13px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ddd3f5;
+}
+
+.resume-section h3 {
+    color: #514078;
+    margin-bottom: 5px;
+}
+
+.resume-section p,
+.resume-section li {
+    color: #39334d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.resume-section ul {
+    padding-left: 20px;
+}
+
+.resume-item {
+    background: white;
+    padding: 13px;
+    margin-bottom: 12px;
+    border-radius: 9px;
+    border-left: 3px solid #9b7bd5;
+}
+
+.resume-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.resume-skills span {
+    background: #e8e0fa;
+    color: #514078;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* =====================================
+   BIODATA PAGE
+===================================== */
+
+.biodata-container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(25,22,47,0.12);
+}
+
+.biodata-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.biodata-title h2 {
+    color: #514078;
+    font-size: 27px;
+}
+
+.biodata-title p {
+    color: #777087;
+}
+
+.biodata-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    background: linear-gradient(135deg, #19162f, #514078);
+    padding: 22px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.biodata-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #c8b5ff;
+}
+
+.biodata-profile h2 {
+    margin-bottom: 5px;
+}
+
+.biodata-section {
+    background: #f7f4fd;
+    padding: 22px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    border-left: 5px solid #7655b5;
+}
+
+.biodata-section h2 {
+    color: #514078;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ddd3f5;
+}
+
+
+/* BIODATA TABLE - CORRECT ALIGNMENT */
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.biodata-table tr {
+    width: 100%;
+}
+
+.biodata-table td {
+    width: 50%;
+    padding: 14px 15px;
+    border-bottom: 1px solid #ded8eb;
+    color: #39334d;
+    text-align: left;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.biodata-table td:first-child {
+    font-weight: bold;
+    color: #514078;
+}
+
+.biodata-table td:last-child {
+    color: #29243d;
+}
+
+
+.biodata-declaration {
+    background: #f7f4fd;
+    padding: 22px;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.biodata-signature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #514078;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.print-button {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 28px;
+    background: #514078;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: #7655b5;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 700px) {
+    .home-container,
+    .resume-container,
+    .biodata-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .home-profile,
+    .resume-profile,
+    .biodata-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-detail-row,
+    .resume-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .site-nav {
+        gap: 15px;
+    }
+
+    .home-profile h2,
+    .resume-profile h2 {
+        font-size: 22px;
+    }
+
+    .biodata-table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .biodata-signature {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* =====================================
+   PRINT DESIGN
+===================================== */
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .site-header,
+    .site-footer,
+    .site-nav,
+    .print-button {
+        display: none !important;
+    }
+
+    .resume-container,
+    .biodata-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .resume-section,
+    .biodata-section {
+        break-inside: avoid;
+    }
+}
+/* BACK NAVIGATION BUTTON */
+
+.back-button-container {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.back-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #19162f, #7655b5);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #19162f;
+    transform: translateY(-3px);
+}
